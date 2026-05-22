@@ -6,11 +6,9 @@ OpenChad enables you to build AI-driven applications with a customizable tool th
 
 ---
 
-[![CI: docs]][CI: docs#link] [![nodejs]][nodejs#link] [![requires-python]][requires-python#link] [![Discord]][Discord#link]
+[![nodejs]][nodejs#link] [![requires-python]][requires-python#link] [![Discord]][Discord#link]
 
 
-[CI: docs]: https://github.com/pytauri/pytauri/actions/workflows/docs.yml/badge.svg
-[CI: docs#link]: https://github.com/pytauri/pytauri/actions/workflows/docs.yml
 [Discord]: https://img.shields.io/discord/1505493160623607820?logo=discord&label=discord
 [Discord#link]: https://discord.gg/JWeqhecqBD'
 [nodejs]: https://img.shields.io/badge/node.js-%3E%3Dv22.14.0-6DA55F?logo=nodedotjs&logoColor=white
