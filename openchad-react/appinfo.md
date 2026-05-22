@@ -95,7 +95,7 @@ interface AppInfo {
 
 ## Detailed Properties & Hooks
 
-### 🆔 Basic Identifiers & Settings
+### Basic Identifiers & Settings
 
 #### `appname`
 * **Type**: `string`
@@ -127,7 +127,7 @@ interface AppInfo {
 
 ---
 
-### 🏛️ Workspace & Tab Hooks
+### Workspace & Tab Hooks
 
 #### `useWorkspace()`
 * **Signature**: `() => { workspace: string; setWorkspace: (workspace: string) => void }`
@@ -169,7 +169,7 @@ interface AppInfo {
 
 ---
 
-### 📑 Tab Action Methods
+### Tab Action Methods
 
 #### `addTab()`
 * **Signature**: `(tabs: TabConfig | TabConfig[], layout?: string) => string[]`
@@ -197,7 +197,7 @@ interface AppInfo {
 
 ---
 
-### 🎨 Visual & Layout Hooks
+### Visual & Layout Hooks
 
 #### `useNotchVisible()`
 * **Signature**: `() => boolean`
@@ -214,7 +214,7 @@ interface AppInfo {
 
 ---
 
-### 🗃️ Reactive Database & State Hooks
+### Reactive Database & State Hooks
 
 #### `useTabDatabase()`
 * **Signature**: `<T>(tb: string, options?: { initialValue?: T }) => UseDatabaseReturn<T>`
@@ -250,7 +250,7 @@ interface AppInfo {
 
 ---
 
-### 🔗 Python & System Tools Bridge
+### Python & System Tools Bridge
 
 #### `pyInvoke()`
 * **Signature**: `<T = any>(label: string, data?: Record<string, unknown> | ArrayBufferLike | Blob | ArrayBufferView, timeout?: number) => Promise<T>`
@@ -274,7 +274,7 @@ interface AppInfo {
 
 ---
 
-### 📂 Reactive Filesystem Hooks
+### Reactive Filesystem Hooks
 
 #### `useFile()`
 * **Signature**: `(filename: string, options?: FileOptions) => UseFileReturn`
