@@ -1,6 +1,6 @@
 # OpenChad 
 
-![banner.png](https://raw.githubusercontent.com/openchad/openchadpy/refs/heads/main/public/banner.png)
+![banner.png](https://raw.githubusercontent.com/openchad/docs/refs/heads/main/public/banner.png)
 
 OpenChad enables you to build AI-driven applications with a unified realtime tool layer accessible across the frontend, AI inference pipeline, and MCP clients.
 
@@ -33,7 +33,7 @@ cd my-app
 npm run dev
 ```
 
-<img src="https://raw.githubusercontent.com/openchad/openchadpy/refs/heads/main/public/preview.png" width="100%" />
+<img src="https://raw.githubusercontent.com/openchad/docs/refs/heads/main/public/preview.png" width="100%" />
 
 ## Your main workspace 
 ```
@@ -52,7 +52,7 @@ Source Code: <https://github.com/openchad/openchad>
 It ships with a built-in Tab Management System, AI Chatbot, Multiview Layout System, bidirectional frontend-backend communication layer. and MCP integration allows you to compose external MCP servers into your application or optionally expose your own tools as an MCP-compliant endpoint consumable by any MCP client.
 
 ### Tool being called by Claude Desktop as `MCP Client`
-<img src="https://raw.githubusercontent.com/openchad/openchadpy/refs/heads/main/public/mcp_client_preview.png" width="100%" />
+<img src="https://raw.githubusercontent.com/openchad/docs/refs/heads/main/public/mcp_client_preview.png" width="100%" />
 
 ### Multiview - Dock multiple apps inside a single tab
-<img src="https://raw.githubusercontent.com/openchad/openchadpy/refs/heads/main/public/multiview_preview.png" width="100%" />
+<img src="https://raw.githubusercontent.com/openchad/docs/refs/heads/main/public/multiview_preview.png" width="100%" />
