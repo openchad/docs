@@ -4,7 +4,6 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "OpenChad Docs",
   description: "Complete Documentation and Guide for OpenChad",
-  base: 'docs',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
