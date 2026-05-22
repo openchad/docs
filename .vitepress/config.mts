@@ -13,7 +13,7 @@ export default defineConfig({
         text: 'Guides',
         items: [
           { text: 'Installation', link: '/guides/installation' },
-          { text: 'Shipping / Distribution', link: '/guides/shipping' },
+          { text: 'Shipping', link: '/guides/shipping' },
         ]
       },
       {
