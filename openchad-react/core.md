@@ -141,7 +141,7 @@ Invokes and executes system or AI tools globally.
   import { useTool } from 'openchad-react'
 
   const executeTool = useTool<string>();
-  const searchResults = await executeTool('web_search', { query: 'Antigravity AI Agent' });
+  const searchResults = await executeTool('web_search', { query: 'Top 10 Programming Language' });
   ```
 
 ### `useFile`
