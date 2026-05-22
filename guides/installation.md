@@ -40,7 +40,7 @@ pnpm --version
 
 
 ```sh
-npx create-openchad-react@latest
+npx create-openchad@latest
 ```
 
 ### 2. Start the development server
@@ -48,4 +48,11 @@ npx create-openchad-react@latest
 ```sh
 cd my-app
 pnpm dev
+```
+
+## Your main workspace 
+```
+my-app/
+├── Tools/ <-- python backend
+└── src/ <-- frontend
 ```

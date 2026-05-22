@@ -13,9 +13,9 @@ Release/
 ├── frontend/ 
 ├── Backend/
 ├── ModelProvider/ 
-└── Pipeline/
-└── python/
-└── Settings/
-└── Tools/
+├── Pipeline/
+├── python/
+├── Settings/
+├── Tools/
 └── your-program
 ```
