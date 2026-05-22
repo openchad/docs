@@ -2,7 +2,7 @@
 
 ![banner.png](https://raw.githubusercontent.com/openchad/docs/refs/heads/main/public/banner.png)
 
-OpenChad enables you to build AI-driven applications with a cutomizable tool that accessible across the frontend, AI inference pipeline, and MCP clients.
+OpenChad enables you to build AI-driven applications with a customizable tool that accessible across the frontend, AI inference pipeline, and MCP clients.
 
 ---
 
