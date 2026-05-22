@@ -11,7 +11,7 @@ hero:
       text: Getting Started
       link: /guides/installation
     - theme: alt
-      text: API References 
+      text: API References
       link: /openchad-react/core
 ---
 
