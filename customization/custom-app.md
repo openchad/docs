@@ -24,7 +24,7 @@ src/main.tsx
                     └─ ...               ← other hooks from openchad-react
 ```
 
-The `Container` reads `AppsProps`, renders the split-pane shell (chat on one side, your app on the other), and injects live hooks into your component as plain props.
+The `Container` reads `Project`, renders the split-pane shell (chat on one side, your app on the other), and injects live hooks into your component as plain props.
 
 ---
 
@@ -58,21 +58,23 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './globals.css'
 import App from './App'
-import { Container, type AppsProps } from "openchad-react"
+import { Container, OpenChadIcon, type Project } from "openchad-react"
 
-const Apps: AppsProps = {
+const Apps: Project = {
+  projectName: "{{PROJECT_NAME}}",
+  projectIcon: OpenChadIcon,
   defaultTab: {
-    layout: "horizontal",   // "horizontal" = chat left, app right
+    layout: "horizontal",
     icon: "default",
     tabs: [
       {
-        appname: "main-app",  // unique identifier for this tab
-        data: {},             // static data forwarded to the component
-        App: App,             // your React component
+        appname: "main-app",
+        data: {},
+        App: App,
       },
     ],
   },
-  size: [80, 20],            // [chat%, app%] — how the split is sized
+  size: [80, 20],
 }
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -82,10 +84,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 )
 ```
 
-### `AppsProps` Fields
+### `Project` Fields
 
 | Field | Type | Description |
 |:---|:---|:---|
+| `projectName` | `string` | Your project name. |
+| `projectIcon` | `React.ComponentType` | Your project icon. |
 | `defaultTab` | `object` | The tab configuration shown by default. |
 | `defaultTab.layout` | `"horizontal"` | Panel orientation. `"horizontal"` places chat and app side-by-side. |
 | `defaultTab.icon` | `string` | Icon key used in the tab bar. |
@@ -331,9 +335,11 @@ You can register multiple components as separate tabs in `main.tsx`:
 ```tsx
 import Dashboard from './apps/Dashboard'
 import Settings from './apps/Settings'
-import { Container, type AppsProps } from "openchad-react"
+import { Container, OpenChadIcon, type Project } from "openchad-react"
 
-const Apps: AppsProps = {
+const Apps: Project = {
+  projectName: "My Project",
+  projectIcon: OpenChadIcon,
   defaultTab: {
     layout: "horizontal",
     icon: "default",
@@ -351,7 +357,7 @@ Each tab gets its own isolated `useTabDatabase` scope (`appname` is used as part
 
 ## Adjusting the Panel Split
 
-The `size` field in `AppsProps` controls how much horizontal space each panel takes:
+The `size` field in `Project` controls how much horizontal space each panel takes:
 
 ```tsx
 size: [80, 20]   // chat gets 80%, app gets 20%  ← default (chat-heavy)

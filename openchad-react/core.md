@@ -19,11 +19,13 @@ The `Container` component is the main shell of the OpenChad workspace. It initia
 ```tsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Container, type AppsProps } from 'openchad-react'
+import { Container, OpenChadIcon, type Project } from "openchad-react"
 import MyChatApp from './apps/Chat'
 import MySettingsApp from './apps/Settings'
 
-const appsConfig: AppsProps = {
+const appsConfig: Project = {
+  projectName: "{{PROJECT_NAME}}",
+  projectIcon: OpenChadIcon,
   defaultTab: {
     layout: 'single', // 'single' | 'horizontal' | 'vertical' | 'grid2x2' | 'triple' ...
     icon: 'message-square',
