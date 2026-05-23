@@ -66,10 +66,12 @@ export type LayoutType =
 ```
 ### Type Definitions
 
-#### `AppsProps`
+#### `Project`
 Configuration passed to the `Container` shell to configure default tabs and register sub-apps.
 ```typescript
-interface AppsProps {
+interface Project {
+  projectName: string; 
+  projectIcon: React.ComponentType;
   defaultTab: DefaultTab;                             // Initial tab(s) to load
   appRegistry?: Record<string, React.ComponentType<AppInfo>>; // Map of app names to React components
   iconRegistry?: Record<string, LucideIcon>;          // Optional custom Lucide icons mapping
